@@ -5,7 +5,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A02",
@@ -13,7 +13,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A03",
@@ -21,7 +21,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A04",
@@ -29,7 +29,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "불만",
   "note": "업무량과 겹침 — 건강 이상이라 괴롭힘·안전 먼저",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A05",
@@ -37,7 +37,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A06",
@@ -45,7 +45,7 @@
   "category": "괴롭힘·안전",
   "sentiment": "만족",
   "note": "해결됐다는 말 — 만족",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A07",
@@ -53,7 +53,7 @@
   "category": "업무량",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A08",
@@ -61,7 +61,7 @@
   "category": "업무량",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A09",
@@ -69,7 +69,7 @@
   "category": "업무량",
   "sentiment": "만족",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A10",
@@ -77,7 +77,7 @@
   "category": "업무량",
   "sentiment": "보통",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A11",
@@ -85,7 +85,7 @@
   "category": "보상",
   "sentiment": "불만",
   "note": "업무량과 겹침 — 돈 이야기라 보상",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A12",
@@ -93,7 +93,7 @@
   "category": "보상",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A13",
@@ -101,7 +101,7 @@
   "category": "보상",
   "sentiment": "만족",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A14",
@@ -109,7 +109,7 @@
   "category": "보상",
   "sentiment": "만족",
   "note": "식당(환경)이 아니라 돈 — 보상",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A15",
@@ -117,7 +117,7 @@
   "category": "관계·소통",
   "sentiment": "만족",
   "note": "성장과 겹침 — 피드백이라 관계·소통",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A16",
@@ -125,7 +125,7 @@
   "category": "관계·소통",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A17",
@@ -133,7 +133,7 @@
   "category": "관계·소통",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A18",
@@ -141,7 +141,7 @@
   "category": "관계·소통",
   "sentiment": "보통",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A19",
@@ -149,7 +149,7 @@
   "category": "환경",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A20",
@@ -157,7 +157,7 @@
   "category": "환경",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A21",
@@ -165,7 +165,7 @@
   "category": "환경",
   "sentiment": "만족",
   "note": "허리 — 다친 게 아니라 나아짐, 환경",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A22",
@@ -173,7 +173,7 @@
   "category": "환경",
   "sentiment": "보통",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A23",
@@ -181,7 +181,7 @@
   "category": "성장",
   "sentiment": "불만",
   "note": "업무량과 겹침 — 교육이라 성장",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A24",
@@ -189,7 +189,7 @@
   "category": "성장",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A25",
@@ -197,7 +197,7 @@
   "category": "성장",
   "sentiment": "만족",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A26",
@@ -205,7 +205,7 @@
   "category": "성장",
   "sentiment": "불만",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A27",
@@ -213,7 +213,7 @@
   "category": "기타",
   "sentiment": "보통",
   "note": "",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A28",
@@ -221,7 +221,7 @@
   "category": "기타",
   "sentiment": "보통",
   "note": "바람 — 보통",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A29",
@@ -229,7 +229,7 @@
   "category": "기타",
   "sentiment": "만족",
   "note": "인사 — 만족",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  },
  {
   "id": "A30",
@@ -237,6 +237,6 @@
   "category": "기타",
   "sentiment": "보통",
   "note": "연락처 — 기타",
-  "labeled_by": "Claude 초안 — 사람 확인 필요"
+  "labeled_by": "Claude 초안 → 배강식 확인 (2026-11-07, 30개 모두 그대로)"
  }
 ]

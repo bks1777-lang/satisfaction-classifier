@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>근무 만족도 분류기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>근무 만족도 분류기</h1>
+    <p class="muted" id="owner"></p>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="try" aria-selected="true">분류</button>
+    <button data-tab="score" aria-selected="false">채점</button>
+  </nav>
+
+  <main>
+    <section id="tab-try">
+      <textarea id="input" rows="3" placeholder="설문 주관식 답 한 줄을 넣어 보세요 (지어낸 문장으로)"></textarea>
+      <button id="btn-classify" class="primary">분류하기</button>
+
+      <div id="result" class="card" hidden>
+        <p class="label">보낼 문장 (가린 뒤)</p>
+        <p id="masked"></p>
+        <p id="found"></p>
+        <p class="label">판정 · <span id="by"></span></p>
+        <p id="chips"></p>
+        <p id="reason" class="muted"></p>
+      </div>
+    </section>
+
+    <section id="tab-score" hidden>
+      <p class="muted">채점용 30개로 잽니다. 정답은 Claude가 붙인 초안입니다 — 사람이 확인해야 믿을 수 있습니다.</p>
+      <button id="btn-score-rule" class="primary">규칙으로 채점</button>
+      <button id="btn-score-ai" class="primary">AI로 채점</button>
+      <p id="score-msg" class="muted" hidden></p>
+
+      <table id="score-table" hidden>
+        <thead><tr><th></th><th>규칙</th><th>AI</th></tr></thead>
+        <tbody>
+          <tr><td>칸</td><td data-k="rule-cat"></td><td data-k="ai-cat"></td></tr>
+          <tr><td>만족도</td><td data-k="rule-urg"></td><td data-k="ai-urg"></td></tr>
+          <tr><td>둘 다 맞음</td><td data-k="rule-both"></td><td data-k="ai-both"></td></tr>
+          <tr><td id="worst-label">가장 나쁜 실수</td><td data-k="rule-worst"></td><td data-k="ai-worst"></td></tr>
+        </tbody>
+      </table>
+      <button id="btn-download" hidden>AI 채점 결과 내려받기</button>
+
+      <div id="wrong" hidden>
+        <h3>틀린 문장 <span class="muted" id="wrong-who">정답 → 판정</span></h3>
+        <ol id="wrong-list"></ol>
+      </div>
+    </section>
+  </main>
+
+  <script src="mask.js"></script>
+  <script src="rules.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+:root {
+  --bg: #f7f8f5; --fg: #1d2420; --muted: #5f6b64; --line: #d9ded9;
+  --card: #ffffff; --accent: #2f6b45; --chip: #e6efe8;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #151a17; --fg: #e6ebe7; --muted: #9aa69f; --line: #2c342f; --card: #1d2420; --accent: #7cc296; --chip: #26342b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 "Malgun Gothic", system-ui, sans-serif; }
+header, nav, main { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 24px; }
+h1 { font-size: 1.4rem; margin: 0 0 4px; }
+h3 { font-size: 1rem; margin: 24px 0 8px; }
+.muted { color: var(--muted); font-size: .9rem; }
+.tabs { display: flex; gap: 8px; margin: 16px auto; }
+.tabs button { flex: 1; padding: 10px; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 8px; font: inherit; cursor: pointer; }
+.tabs button[aria-selected="true"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+textarea { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); font: inherit; resize: vertical; }
+button.primary { margin: 12px 0; padding: 10px 18px; border: 0; border-radius: 8px; background: var(--accent); color: var(--bg); font: inherit; font-weight: 700; cursor: pointer; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-top: 8px; }
+.card p { margin: 4px 0 12px; overflow-wrap: anywhere; }
+.label { font-size: .8rem; color: var(--muted); margin-bottom: 0 !important; }
+.chip { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--chip); color: var(--accent); font-weight: 700; }
+.tag { display: inline-block; padding: 0 8px; border: 1px solid var(--line); border-radius: 6px; font-size: .85rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; background: var(--card); }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+ol { padding-left: 20px; }
+li { margin-bottom: 10px; overflow-wrap: anywhere; }
+li .d { color: var(--muted); font-size: .9rem; }

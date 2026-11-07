@@ -1,0 +1,367 @@
+{
+ "model": "gemini-3.5-flash-lite",
+ "criteria_version": "1",
+ "answer_labeled_by": "Claude 초안",
+ "rows": [
+  {
+   "id": "A01",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만",
+    "reason": "사람들 앞에서 외모를 비웃는 폭언과 따돌림 등 괴롭힘에 해당하기 때문이다."
+   }
+  },
+  {
+   "id": "A02",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만",
+    "reason": "바닥의 기름 때문에 미끄러져 넘어져서 다쳤기 때문이다."
+   }
+  },
+  {
+   "id": "A03",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만",
+    "reason": "퇴근 후 지속적인 연락과 술자리 강요는 부당한 지시 및 괴롭힘에 해당하기 때문이다."
+   }
+  },
+  {
+   "id": "A04",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만",
+    "reason": "일이 많아 잠을 못 자고 가슴이 두근거리는 등 일 때문에 건강에 이상이 생겼기 때문이다."
+   }
+  },
+  {
+   "id": "A05",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "불만",
+    "reason": "무거운 상자를 들다가 허리를 삐끗하는 사고가 발생했기 때문이다."
+   }
+  },
+  {
+   "id": "A06",
+   "정답": {
+    "category": "괴롭힘·안전",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "괴롭힘·안전",
+    "sentiment": "만족",
+    "reason": "예전의 욕설 문제가 신고 후 조치가 잘 되어 해결되었기 때문이다."
+   }
+  },
+  {
+   "id": "A07",
+   "정답": {
+    "category": "업무량",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "업무량",
+    "sentiment": "불만",
+    "reason": "인력 부족으로 인해 일이 한 사람에게 몰려 양이 늘어났기 때문이다."
+   }
+  },
+  {
+   "id": "A08",
+   "정답": {
+    "category": "업무량",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "업무량",
+    "sentiment": "불만",
+    "reason": "야근 등 일하는 시간이 지나치게 많기 때문이다."
+   }
+  },
+  {
+   "id": "A09",
+   "정답": {
+    "category": "업무량",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "업무량",
+    "sentiment": "만족",
+    "reason": "일정이 여유 있어 일의 양과 시간에 숨 쉴 틈이 생겼기 때문이다."
+   }
+  },
+  {
+   "id": "A10",
+   "정답": {
+    "category": "업무량",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "업무량",
+    "sentiment": "보통",
+    "reason": "성수기라는 특정 시기의 일의 양과 시간에 대한 바람 또는 평상시 상태를 나타내기 때문이다."
+   }
+  },
+  {
+   "id": "A11",
+   "정답": {
+    "category": "보상",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "업무량",
+    "sentiment": "불만",
+    "reason": ""
+   }
+  },
+  {
+   "id": "A12",
+   "정답": {
+    "category": "보상",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "보상",
+    "sentiment": "불만",
+    "reason": "연봉 협상 절차에 대한 불만이다."
+   }
+  },
+  {
+   "id": "A13",
+   "정답": {
+    "category": "보상",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "보상",
+    "sentiment": "만족",
+    "reason": "휴직 제도를 자유롭게 쓸 수 있어 좋다."
+   }
+  },
+  {
+   "id": "A14",
+   "정답": {
+    "category": "보상",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "보상",
+    "sentiment": "만족",
+    "reason": "식대 인상으로 상황이 나아졌다."
+   }
+  },
+  {
+   "id": "A15",
+   "정답": {
+    "category": "관계·소통",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "관계·소통",
+    "sentiment": "만족",
+    "reason": "팀장님의 구체적인 피드백과 소통에 만족한다."
+   }
+  },
+  {
+   "id": "A16",
+   "정답": {
+    "category": "관계·소통",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "관계·소통",
+    "sentiment": "불만",
+    "reason": "부서 간 협조와 조율이 안 된다."
+   }
+  },
+  {
+   "id": "A17",
+   "정답": {
+    "category": "관계·소통",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "관계·소통",
+    "sentiment": "불만",
+    "reason": "공지 전달과 소통의 지연에 대한 불만이다."
+   }
+  },
+  {
+   "id": "A18",
+   "정답": {
+    "category": "관계·소통",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "관계·소통",
+    "sentiment": "보통",
+    "reason": "동료들과의 관계가 무난하다."
+   }
+  },
+  {
+   "id": "A19",
+   "정답": {
+    "category": "환경",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "환경",
+    "sentiment": "불만",
+    "reason": "사무 기기 장비 고장에 대한 불만이다."
+   }
+  },
+  {
+   "id": "A20",
+   "정답": {
+    "category": "환경",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "환경",
+    "sentiment": "불만",
+    "reason": "사무실 조명 환경에 대한 불만이다."
+   }
+  },
+  {
+   "id": "A21",
+   "정답": {
+    "category": "환경",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "환경",
+    "sentiment": "만족",
+    "reason": "새 의자로 바뀌어 허리가 덜 아프다는 것은 일하는 곳과 도구에 대한 만족이다."
+   }
+  },
+  {
+   "id": "A22",
+   "정답": {
+    "category": "환경",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "환경",
+    "sentiment": "보통",
+    "reason": "와이파이가 자주 끊기지만 그럭저럭 쓴다는 것은 장소와 도구에 대한 보통의 반응이다."
+   }
+  },
+  {
+   "id": "A23",
+   "정답": {
+    "category": "성장",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "성장",
+    "sentiment": "불만",
+    "reason": "배우고 싶은 교육을 신청했으나 바쁘다는 이유로 가지 못하게 한 것은 교육과 관련된 성장의 불만이다."
+   }
+  },
+  {
+   "id": "A24",
+   "정답": {
+    "category": "성장",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "성장",
+    "sentiment": "불만",
+    "reason": "평가 결과를 알려 주지 않아 고칠 점을 모른다는 것은 평가와 관련된 성장의 불만이다."
+   }
+  },
+  {
+   "id": "A25",
+   "정답": {
+    "category": "성장",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "성장",
+    "sentiment": "만족",
+    "reason": "새 업무를 맡겨 줘서 해 볼 만하다는 것은 새 업무를 맡은 성장에 대한 만족이다."
+   }
+  },
+  {
+   "id": "A26",
+   "정답": {
+    "category": "성장",
+    "sentiment": "불만"
+   },
+   "AI": {
+    "category": "성장",
+    "sentiment": "불만",
+    "reason": "이직을 고민할 만큼 앞이 안 보인다는 것은 앞으로 나아감에 대한 불만이다."
+   }
+  },
+  {
+   "id": "A27",
+   "정답": {
+    "category": "기타",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "기타",
+    "sentiment": "보통",
+    "reason": "할 말 없음이나 다름없는 응답이므로 기타의 보통이다."
+   }
+  },
+  {
+   "id": "A28",
+   "정답": {
+    "category": "기타",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "기타",
+    "sentiment": "보통",
+    "reason": "설문 자체에 대한 바람이므로 기타의 보통이다."
+   }
+  },
+  {
+   "id": "A29",
+   "정답": {
+    "category": "기타",
+    "sentiment": "만족"
+   },
+   "AI": {
+    "category": "기타",
+    "sentiment": "만족",
+    "reason": "전반적인 인사말이므로 기타의 만족이다."
+   }
+  },
+  {
+   "id": "A30",
+   "정답": {
+    "category": "기타",
+    "sentiment": "보통"
+   },
+   "AI": {
+    "category": "기타",
+    "sentiment": "보통",
+    "reason": "연락처를 남긴 것이므로 기타의 보통이다."
+   }
+  }
+ ]
+}

@@ -6,20 +6,51 @@
   const $ = s => document.querySelector(s);
   const S = { criteria: null, keywords: null, answer: [], aiResults: null, aiModel: "" };
   const BATCH = 10;
+  const EXAMPLES = ["P02", "P10", "P22", "P29", "P47"];  // 예시는 연습용에서만 — 채점용을 보여 주면 시험지가 새어 나간다
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
   async function load() {
-    const [c, k, a] = await Promise.all([
+    const [c, k, a, p] = await Promise.all([
       fetch("criteria.json").then(r => r.json()),
       fetch("keywords.json").then(r => r.json()),
       fetch("data/answer.json").then(r => r.json()),
+      fetch("data/practice.json").then(r => r.json()),
     ]);
     S.criteria = c; S.keywords = k; S.answer = a;
     $("#owner").textContent = c.owner;
     $("#worst-label").textContent = `${c.priority[0]} 놓침`;
+    $("#order").textContent = c.priority.join(" → ");
+    $("#worst").textContent = c.worst_mistake;
+
+    $("#version").textContent = "기준 version " + c.version;
+
+    // 나올 수 있는 답 — 칸은 기준 순서대로
+    $("#legend-cat").innerHTML = c.priority.map(chip).join(" ");
+    $("#legend-urg").innerHTML = c.sentiment.levels.map(chip).join(" ");
+
+    // 🎲 누를 때마다 연습용 문장 하나 (같은 문장이 연달아 나오지 않게)
+    let last = -1;
+    $("#btn-random").addEventListener("click", () => {
+      let i;
+      do { i = Math.floor(Math.random() * p.length); } while (p.length > 1 && i === last);
+      last = i;
+      $("#input").value = p[i].text; $("#input").focus();
+    });
+
+    // 예시 문장 버튼
+    $("#examples").innerHTML = p.filter(r => EXAMPLES.includes(r.id))
+      .map(r => `<button type="button" class="ex">${esc(r.text)}</button>`).join("");
+    document.querySelectorAll("#examples .ex").forEach(b => b.addEventListener("click", () => {
+      $("#input").value = b.textContent; $("#input").focus();
+    }));
+
+    // 규칙이 쓰는 낱말
+    const row = (name, words) => `<p><b>${esc(name)}</b> ${words.length ? words.map(w => `<span class="tag">${esc(w)}</span>`).join(" ") : '<span class="muted">낱말 없음 — 다른 칸에 안 걸리면 여기</span>'}</p>`;
+    $("#kw").innerHTML = c.priority.map(n => row(n, k.categories[n] || [])).join("")
+      + Object.entries(k.sentiment).map(([lv, ws]) => row(`만족도 ${lv}`, ws)).join("");
   }
 
   // 탭
@@ -43,7 +74,11 @@
     }
   }
 
-  function chip(text) { return `<span class="chip">${esc(text)}</span>`; }
+  // 가장 나쁜 실수 칸 · 불만은 빨간 칩
+  function chip(text) {
+    const hot = text === S.criteria.priority[0] || text === "불만";
+    return `<span class="chip${hot ? " hot" : ""}">${esc(text)}</span>`;
+  }
 
   // 분류
   $("#btn-classify").addEventListener("click", async () => {
@@ -54,6 +89,7 @@
 
     const m = Mask.mask(text);
     $("#result").hidden = false;
+    $("#result-empty").hidden = true;
     $("#masked").textContent = m.masked;
     $("#found").innerHTML = m.found.length
       ? m.found.map(f => `<span class="tag">${esc(f.type)} 가림</span>`).join(" ")
@@ -62,13 +98,15 @@
     const ai = await askAI([m.masked]);
     const got = ai.results && ai.results[0];
     if (got) {
-      $("#by").textContent = "AI · " + (ai.model || "");
-      $("#chips").innerHTML = chip(got.category) + " " + chip(got.sentiment);
+      $("#by").textContent = "AI (" + (ai.model || "") + ")";
+      $("#chip-cat").innerHTML = chip(got.category);
+      $("#chip-urg").innerHTML = chip(got.sentiment);
       $("#reason").textContent = got.reason || "";
     } else {
       const res = Rules.classify(m.masked, S.criteria, S.keywords);
       $("#by").textContent = `AI 없이 규칙으로 갈랐습니다 — ${ai.reason || "AI 답 없음"}`;
-      $("#chips").innerHTML = chip(res.category) + " " + chip(res.sentiment);
+      $("#chip-cat").innerHTML = chip(res.category);
+      $("#chip-urg").innerHTML = chip(res.sentiment);
       $("#reason").textContent = res.reason;
     }
     btn.disabled = false; btn.textContent = "분류하기";

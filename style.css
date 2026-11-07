@@ -27,3 +27,37 @@ th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
 ol { padding-left: 20px; }
 li { margin-bottom: 10px; overflow-wrap: anywhere; }
 li .d { color: var(--muted); font-size: .9rem; }
+
+/* 분류 탭 — 넓은 화면은 왼쪽 입력 · 오른쪽 결과 */
+:root { --warn-bg: #fdecea; --warn-fg: #a32b1f; --hot-bg: #fbe3df; --hot-fg: #b3261e; }
+@media (prefers-color-scheme: dark) { :root { --warn-bg: #3a1f1c; --warn-fg: #f2a89f; --hot-bg: #4a221e; --hot-fg: #ffb4a9; } }
+body:has(.two) header, body:has(.two) nav, body:has(.two) main { max-width: 960px; }
+.banner { margin: 0; padding: 8px 16px; background: var(--chip); color: var(--fg); font-size: .85rem; text-align: center; }
+.two { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .two { grid-template-columns: 1fr 1fr; align-items: start; } }
+.two .card { margin-top: 0; }
+.warn { background: var(--warn-bg); color: var(--warn-fg); padding: 8px 12px; border-radius: 8px; font-size: .88rem; font-weight: 700; }
+.wide { width: 100%; }
+.examples { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 12px; }
+.ex { text-align: left; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); font: inherit; font-size: .85rem; cursor: pointer; }
+.ex:hover { border-color: var(--accent); }
+details summary { cursor: pointer; color: var(--muted); font-size: .9rem; }
+details[open] summary { margin-bottom: 8px; }
+#kw p { margin: 6px 0; font-size: .88rem; }
+#kw .tag { margin: 2px 0; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pair > div { background: var(--bg); border-radius: 8px; padding: 8px 10px; }
+.chip.hot { background: var(--hot-bg); color: var(--hot-fg); }
+.about { margin: 16px 0 32px; }
+.about summary { color: var(--fg); font-weight: 700; font-size: 1rem; }
+.about ul { margin: 8px 0 0; padding-left: 20px; }
+.about li { margin-bottom: 6px; }
+
+/* 나올 수 있는 답 · 버튼 줄 */
+.legend-title { font-weight: 700; margin: 0 0 6px !important; }
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 8px; }
+.legend .label { min-width: 44px; }
+.legend .chip { font-size: .8rem; font-weight: 600; }
+.btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.btn-row .primary { margin: 0; flex: 1; }
+.ghost { padding: 10px 16px; border: 1px solid var(--accent); border-radius: 8px; background: transparent; color: var(--accent); font: inherit; font-weight: 700; cursor: pointer; }

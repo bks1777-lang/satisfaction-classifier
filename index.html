@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <p class="banner"><b>연습용 화면입니다.</b> 지어낸 문장으로 연습하는 분류기이며, 넣은 문장은 저장하지 않습니다.</p>
   <header>
     <h1>근무 만족도 분류기</h1>
-    <p class="muted" id="owner"></p>
+    <p class="muted">AI(Gemini)로 가르고, 실패하면 규칙으로 가릅니다 · <span id="owner"></span> · <b id="version"></b></p>
   </header>
 
   <nav class="tabs">
@@ -19,17 +20,56 @@
 
   <main>
     <section id="tab-try">
-      <textarea id="input" rows="3" placeholder="설문 주관식 답 한 줄을 넣어 보세요 (지어낸 문장으로)"></textarea>
-      <button id="btn-classify" class="primary">분류하기</button>
+      <div class="two">
+        <div class="card">
+          <p class="legend-title">💡 나올 수 있는 답</p>
+          <div class="legend"><span class="label">칸</span><span id="legend-cat"></span></div>
+          <div class="legend"><span class="label">만족도</span><span id="legend-urg"></span></div>
+          <p class="warn">실제 직원의 설문 답 · 이름 · 부서 · 전화번호는 넣지 마세요</p>
+          <label class="label" for="input">설문 주관식 답 한 줄</label>
+          <textarea id="input" rows="3" placeholder="예) 회의가 너무 길고 결론 없이 끝나요"></textarea>
+          <div class="btn-row">
+            <button id="btn-classify" class="primary">분류하기</button>
+            <button id="btn-random" type="button" class="ghost">🎲 예시 문장 넣기</button>
+          </div>
+          <p class="label">예시 문장 (누르면 입력 칸에 들어갑니다 · 연습용에서 골랐습니다)</p>
+          <div id="examples" class="examples"></div>
+          <details>
+            <summary>규칙이 쓰는 낱말 (연습용 문장에서 뽑음)</summary>
+            <div id="kw"></div>
+          </details>
+        </div>
 
-      <div id="result" class="card" hidden>
-        <p class="label">보낼 문장 (가린 뒤)</p>
-        <p id="masked"></p>
-        <p id="found"></p>
-        <p class="label">판정 · <span id="by"></span></p>
-        <p id="chips"></p>
-        <p id="reason" class="muted"></p>
+        <div class="card" id="result-box">
+          <p id="result-empty" class="muted">왼쪽에 문장을 넣고 «분류하기»를 누르면 여기에 결과가 나옵니다.</p>
+          <div id="result" hidden>
+            <p class="label">AI에 보낸 문장 (가린 뒤)</p>
+            <p id="masked"></p>
+            <p id="found"></p>
+            <p class="label">판정 방식</p>
+            <p id="by"></p>
+            <div class="pair">
+              <div><p class="label">칸</p><p id="chip-cat"></p></div>
+              <div><p class="label">만족도</p><p id="chip-urg"></p></div>
+            </div>
+            <p class="label">이유</p>
+            <p id="reason"></p>
+          </div>
+        </div>
       </div>
+
+      <details class="card about">
+        <summary>이렇게 쓰는 도구예요</summary>
+        <ul>
+          <li><b>누가:</b> 설문을 정리하는 담당자가 주관식 답 한 줄을 넣습니다.</li>
+          <li><b>무엇이 나오나:</b> 주제 칸 7개 중 하나 · 만족도(만족 · 보통 · 불만) · 이유 한 줄.</li>
+          <li><b>여러 칸에 걸치면:</b> <span id="order"></span> 순서로 먼저 고릅니다.</li>
+          <li><b>가장 나쁜 실수:</b> <span id="worst"></span></li>
+          <li><b>보내기 전에:</b> 이름 · 이름+직급 · 부서/팀 · 전화번호를 내 브라우저에서 가린 뒤 AI에 보냅니다. 익명 설문이라 누구인지 드러나면 안 됩니다.</li>
+          <li><b>AI가 안 되면:</b> 규칙(낱말)으로 가르고, 그렇다고 표시합니다.</li>
+          <li><b>믿을 만한가:</b> 채점 탭에서 정답 30개로 규칙과 AI를 직접 잴 수 있습니다.</li>
+        </ul>
+      </details>
     </section>
 
     <section id="tab-score" hidden>
